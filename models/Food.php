@@ -8,9 +8,9 @@ use PDO;
 class Food extends DbModel
 {
 
-  public string $salad;
-  public string $garnish;
-  public string $sidedish;
+  public string $salad = '';
+  public string $garnish = '';
+  public string $sidedish = '';
 
   public function attributes(): array
   {

@@ -47,6 +47,7 @@ class Router
                 $middleware->execute();
             } */
             return call_user_func($callback, $this->request, $this->response); //вернуться сюда для разбора аргументов request response
+           
         }
     }
     /*  public function resolve()
