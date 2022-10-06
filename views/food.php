@@ -1,6 +1,9 @@
 
-    <?php
-    var_dump($model -> fetchFood());
-    ?>
-
-<h4>It's food page</h4>
+<?php
+foreach ($model->fetchFood() as $set) {
+    foreach ($set as $type => $dish) {
+        echo  "<h4>$type:$dish</h4><br>";
+    }
+    echo "<br>";
+}
+?>

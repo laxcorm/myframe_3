@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<p>Just do it</p>
+
     <div class="container">
         {{content}}
     </div>

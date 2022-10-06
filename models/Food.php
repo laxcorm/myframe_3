@@ -29,10 +29,9 @@ class Food extends DbModel
 
   public function fetchFood()
   {
-    // $tableName = static::tableName();
-    // $statement = self::prepare("SELECT * FROM $tableName");
-    // $statement->execute();
-    // return $statement->fetch(PDO::FETCH_ASSOC);
-    return "Duaro";
+    $tableName = static::tableName();
+    $statement = self::prepare("SELECT * FROM $tableName");
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
   }
 }
